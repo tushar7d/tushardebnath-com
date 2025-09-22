@@ -1,16 +1,18 @@
-
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/app-sidebar"
 
 function Layout({children}) {
   
 
   return (
     <>
-    <div>
-        head
-    </div>
-     <div>
+    <SidebarProvider>
+       <AppSidebar />
+     <main >
+      <SidebarTrigger />
         {children}
-     </div>
+     </main>
+     </SidebarProvider>
     </>
   )
 }
