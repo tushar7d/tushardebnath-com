@@ -1,4 +1,4 @@
-import { Book, Briefcase, Calendar, Home, Inbox, Paperclip, Pen, Search, Settings } from "lucide-react";
+import { Book, Briefcase, Calendar, Home, Inbox, Paperclip, Pen, Play, Search, Settings } from "lucide-react";
 
 import {
   Sidebar,
@@ -32,6 +32,11 @@ const items = [
     title: "Tutorials",
     url: "/tutorials",
     icon: Book,
+  },
+  {
+    title: "Playground",
+    url: "/play",
+    icon: Play,
   },
 ];
 
